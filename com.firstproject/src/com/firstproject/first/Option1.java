@@ -1,10 +1,11 @@
 package com.firstproject.first;
 
 import java.io.File;
+import java.io.IOException;
 
 public class Option1 {
 	
-	public void fileList() {
+	public void fileList() throws IOException {
 		//System.out.println("list of files");
 		File dirName = new File("C:/temp");
 	    File[] listFiles = dirName.listFiles();

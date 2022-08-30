@@ -1,5 +1,6 @@
 package com.firstproject.first;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 
@@ -16,7 +17,7 @@ public class Main {
 			System.out.println("Developers Name: " + developerName);
 		}
 		
-		public void mainMenu() {
+		public void mainMenu() throws IOException {
 			Scanner sc = new Scanner(System.in);	
 			
 			//do {
@@ -45,7 +46,7 @@ public class Main {
 			}
 		
 		
-		public static void main (String[]args) {
+		public static void main (String[]args) throws IOException {
 			Main main = new Main();
 			main.firstDetails();
 			main.mainMenu();
