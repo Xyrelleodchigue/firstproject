@@ -21,6 +21,8 @@ public class Option2_add {
         }
 		
 		//System.out.println("Add files");
+		 Main main = new Main();
+		    main.mainMenu();
 	}
 
 }

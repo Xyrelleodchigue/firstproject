@@ -7,23 +7,28 @@ import java.util.Arrays;
 public class Option1 {
 	
 	public void fileList() throws IOException {
-		//System.out.println("list of files");
-		File dirName = new File("C:/temp");
-	    File[] listFiles = dirName.listFiles();
-	    Arrays.sort(listFiles);
+		  // Unsorted Array
+				File dirName = new File("C:/temp");
+				 File[] listFiles = dirName.listFiles();
+		        File []array = dirName.listFiles();
+		  
+		        // Sorting the array
+		        Arrays.sort(array);
+		  
+		        // Printing sorted array
+		        System.out.println("Sorted Array:");
+		        for (int i = 0; i < array.length; i++) {
+		            System.out.print(array[i].getName()+ " \n");
+		        }
+		        System.out.println();
+		  
+	    	Main main = new Main();
+	    	main.mainMenu();
+		        
+	    } 
+}
 	    
-	    for (int i = 0; i < listFiles.length; i++) {
-	    	 if (listFiles[i].isFile()) {
-	    	        System.out.println("File: " + listFiles[i].getName());
-	    	      } else if (listFiles[i].isDirectory()) {
-	    	        System.out.println("Directory: " + listFiles[i].getName());
-	    	      }
-	    	
-	    }
-	    Main main = new Main();
-	    main.mainMenu();
 	    
-	    }
 	
 
-}
+

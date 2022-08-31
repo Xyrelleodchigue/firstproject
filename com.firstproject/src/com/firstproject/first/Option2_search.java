@@ -26,7 +26,7 @@ public class Option2_search {
 		static boolean linearSearch(File[]arr, String x) {
 			for(int i = 0; i<arr.length; i++) {
 				if (arr[i].toString().equals(x)) {
-					System.out.println(arr[i].toString());
+					//System.out.println(arr[i].toString());
 					return true;
 				}
 			}
